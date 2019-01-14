@@ -1,0 +1,57 @@
+/* =================普通按钮================= */
+
+header {
+    padding: 1rem;
+    color: #888;
+    font-size: 1.5rem;
+}
+
+.myInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 1rem;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+.myInput input {
+    width: 72%;
+    font-size: 1.8rem;
+
+}
+
+.exMyInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 1rem;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+.exMyInput section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 72%;
+}
+
+.exMyInput input {
+    width: 65%;
+    font-size: 1.8rem;
+}
+
+button {
+    margin-top: 5rem;
+    width: 95%;
+    margin: 4rem auto;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    display: block;
+    background: #3e86ff;
+    border-radius: 0.5rem;
+}

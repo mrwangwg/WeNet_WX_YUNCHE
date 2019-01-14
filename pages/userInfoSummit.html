@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/infoCommit.css">
+    <title>用户信息</title>
+</head>
+
+<body>
+    <section id="summitPage">
+        <header>
+            <span>请填写车主信息，填写后可在用户列表查看/修改</span>
+        </header>
+
+        <section class="content">
+
+            <section class="myInput">
+                <span>车主姓名</span>
+                <input type="text" placeholder="请输入车主姓名" id="" />
+            </section>
+
+            <section class="myInput">
+                <span>联系电话</span>
+                <input type="text" placeholder="请输入联系电话" id="" />
+            </section>
+            <section class="exMyInput">
+
+                <span>车牌号码</span>
+                <select id="provincePick">
+                    <option selected="selected" value="京">京</option>
+
+                    <option value="津">津</option>
+                    <option value="沪">沪</option>
+                    <option value="浙">浙</option>
+                    <option value="豫">豫</option>
+                    <option value="川">川</option>
+                    <option value="渝">渝</option>
+                    <option value="鄂">鄂</option>
+                    <option value="赣">赣</option>
+                    <option value="冀">冀</option>
+                    <option value="蒙">蒙</option>
+
+                    <option value="鲁">鲁</option>
+                    <option value="苏">苏</option>
+                    <option value="辽">辽</option>
+                    <option value="吉">吉</option>
+                    <option value="皖">皖</option>
+                    <option value="湘">湘</option>
+
+                    <option value="黑">黑</option>
+                    <option value="琼">琼</option>
+                    <option value="贵">贵</option>
+                    <option value="桂">桂</option>
+                    <option value="云">云</option>
+                    <option value="藏">藏</option>
+
+                    <option value="陕">陕</option>
+                    <option value="甘">甘</option>
+                    <option value="宁">宁</option>
+                    <option value="青">青</option>
+                    <option value="闽">闽</option>
+
+                    <option value="粤">粤</option>
+                    <option value="新">新</option>
+                    <option value="晋">晋</option>
+                </select>
+
+                <input type="text" placeholder="请输入车牌号：如A88888" id="carNumber" maxlength="7" onKeyUp="value=value.replace(/[^\w\.\/]/ig,'')" />
+
+            </section>
+            <section class="exMyInput">
+                <span>所在区域</span>
+                <section>
+                    <input type="text" placeholder="请选择所在地区" id="" /><span>图</span>
+                </section>
+            </section>
+
+            <section class="exMyInput">
+                <span>行驶里程</span>
+                <section>
+                    <input type="text" placeholder="请输入行驶里程" id="" /><span>km</span>
+                </section>
+            </section>
+        </section>
+
+        <footer>
+            <button>提交审核</button>
+        </footer>
+    </section>
+
+    <section id="summitStatePage">
+        <section id="summitSuccessState" class="content-state">
+            <section><img src="./img/success.png" /></section>
+            <h3>已成功提交用户信息！</h3>
+            <span>系统已实时通知管理员进行审核，并于公众号实时告知审核结果；</span>
+        </section>
+        <section id="authSuccessState" class="content-state">
+            <section><img src="./img/auth_success.png" /></section>
+            <h3>审核成功！</h3>
+            <span>您的提交信息已审核通过，快去查看想要的服务吧！</span>
+        </section>
+        <section id="authFailState" class="content-state">
+            <section><img src="./img/voilation_error.png" /></section>
+            <h3>审核失败！</h3>
+            <span>填写的信息有误，请检查后重新提交！</span>
+        </section>
+        <section id="authDoingState" class="content-state">
+            <section><img src="./img/waiting.png" /></section>
+            <h3>审核中。。。</h3>
+            <span>管理员正在进行审核，请您耐心等待！</span>
+        </section>
+    </section>
+</body>
+
+</html>

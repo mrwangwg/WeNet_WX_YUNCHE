@@ -1,0 +1,77 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #efeff4;
+    max-width: 72rem;
+    margin: 0 auto;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+}
+
+/* ==============选择器============== */
+select {
+    font-size: 1.8rem;
+    color: #3e86ff;
+    border: none;
+    background: none;
+
+    /*很关键：将默认的select选择框样式清除*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    /* background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent; */
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    /* padding-right: 14px; */
+}
+
+/* =============加载============ */
+.loading {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(./img/loading.gif) center no-repeat rgba(0, 0, 0, 0.3);
+    background-size: 3rem 3rem;
+}
+
+/* ==============状态提示样式的页面=========== */
+.content-state {
+    margin-top: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.content-state img {
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+.content-state span {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #888;
+}
+
